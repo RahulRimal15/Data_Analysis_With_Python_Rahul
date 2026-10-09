@@ -1,7 +1,5 @@
 # Premier League ETL Project
 
-ETL capstone project using Premier League match results and team stats (2006-2018).
-
 **Dataset:** https://www.kaggle.com/datasets/zaeemnalla/premier-league
 
 ## Files
@@ -9,8 +7,8 @@ ETL capstone project using Premier League match results and team stats (2006-201
 - `data/raw/stats.csv` - season stats for each team (wins, goals, shots, passes, cards...)
 - `notebooks/01_extract_and_eda.ipynb` - extraction and EDA
 
-## Done so far
-- Phase 1: Extraction
-- Phase 2: EDA (basic exploration, data quality checks, exploratory analysis)
+## Completed
+ Extraction
+ EDA 
 
-Cleaning, database and SQL reports come next.
+
