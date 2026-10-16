@@ -1,0 +1,118 @@
+Query 1: How many matches ended in a home win, draw and away win?
+  result  matches  percentage
+Home win     2108        46.2
+Away win     1288        28.2
+    Draw     1164        25.5
+
+Query 2: Average goals per match in each season
+   season  matches  avg_goals
+2006-2007      380       2.45
+2007-2008      380       2.64
+2008-2009      380       2.48
+2009-2010      380       2.77
+2010-2011      380       2.80
+2011-2012      380       2.81
+2012-2013      380       2.80
+2013-2014      380       2.77
+2014-2015      380       2.57
+2015-2016      380       2.70
+2016-2017      380       2.80
+2017-2018      380       2.68
+
+Query 3: Which team won the league each season?
+   season          champion  points  goal_difference
+2006-2007 Manchester United      89               56
+2007-2008 Manchester United      87               58
+2008-2009 Manchester United      90               44
+2009-2010           Chelsea      86               71
+2010-2011 Manchester United      80               41
+2011-2012   Manchester City      89               64
+2012-2013 Manchester United      89               43
+2013-2014   Manchester City      86               65
+2014-2015           Chelsea      87               41
+2015-2016    Leicester City      81               32
+2016-2017           Chelsea      93               52
+2017-2018   Manchester City     100               79
+
+Query 4: Top 10 teams by total points over the 12 seasons
+        team_name  seasons_played  total_points  avg_points
+Manchester United              12           959        79.9
+          Chelsea              12           929        77.4
+          Arsenal              12           872        72.7
+  Manchester City              12           861        71.8
+        Liverpool              12           821        68.4
+Tottenham Hotspur              12           796        66.3
+          Everton              12           696        58.0
+  West Ham United              11           491        44.6
+       Stoke City              10           457        45.7
+      Aston Villa              10           456        45.6
+
+Query 5: Home win percentage of teams that played at least 100 home matches
+        team_name  home_matches  home_wins  home_win_pct
+Manchester United           228        171          75.0
+  Manchester City           228        156          68.4
+          Chelsea           228        153          67.1
+          Arsenal           228        152          66.7
+Tottenham Hotspur           228        138          60.5
+        Liverpool           228        136          59.6
+          Everton           228        121          53.1
+       Stoke City           190         81          42.6
+           Fulham           152         64          42.1
+      Southampton           114         46          40.4
+
+Query 6: The 10 highest scoring matches
+   season            home_team         away_team  home_goals  away_goals  total_goals
+2007-2008           Portsmouth           Reading           7           4           11
+2007-2008    Tottenham Hotspur           Reading           6           4           10
+2009-2010    Tottenham Hotspur    Wigan Athletic           9           1           10
+2011-2012    Manchester United           Arsenal           8           2           10
+2012-2013              Arsenal  Newcastle United           7           3           10
+2012-2013 West Bromwich Albion Manchester United           5           5           10
+2007-2008        Middlesbrough   Manchester City           8           1            9
+2009-2010              Chelsea        Sunderland           7           2            9
+2013-2014      Manchester City           Arsenal           6           3            9
+2013-2014         Cardiff City         Liverpool           3           6            9
+
+Query 7: Teams that scored more than the average in 2017-2018
+        team_name  goals_for  position
+  Manchester City        106         1
+        Liverpool         84         4
+Tottenham Hotspur         74         3
+          Arsenal         74         6
+Manchester United         68         2
+          Chelsea         62         5
+   Leicester City         56         9
+
+Query 8: Best defences, fewest goals conceded in a season
+        team_name    season  goals_against  clean_sheets  position
+Manchester United 2007-2008             22            21         1
+          Chelsea 2006-2007             24            22         2
+Manchester United 2008-2009             24            24         1
+          Chelsea 2008-2009             24            22         3
+          Chelsea 2007-2008             26            21         2
+Tottenham Hotspur 2016-2017             26            17         2
+Manchester United 2006-2007             27            16         1
+        Liverpool 2006-2007             27            20         3
+        Liverpool 2008-2009             27            20         2
+          Chelsea 2013-2014             27            18         3
+
+Query 9: Do top 4 teams have more shots and passes than the rest?
+group_name  team_seasons  avg_shots_on_target  avg_passes  avg_goals
+      Rest           192                154.0     14695.0       44.9
+     Top 4            48                225.0     19679.0       75.8
+
+Query 10: Teams with at least 10 seasons in the league and their average position
+        team_name  seasons_played  avg_position  best_position
+Manchester United              12           2.8              1
+          Chelsea              12           3.3              1
+          Arsenal              12           3.8              2
+  Manchester City              12           4.6              1
+        Liverpool              12           5.1              2
+Tottenham Hotspur              12           5.1              2
+          Everton              12           7.2              5
+      Aston Villa              10          12.1              6
+       Stoke City              10          12.2              9
+  West Ham United              11          12.5              7
+ Newcastle United              10          12.9              5
+       Sunderland              10          15.1             10
+
